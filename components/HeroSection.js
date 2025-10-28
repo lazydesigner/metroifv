@@ -12,11 +12,11 @@ export default function HeroSection() {
   const heroSlides = [
     {
       id: 1,
-      title: "Your Journey to",
+      title: "Your Journey to", 
       subtitle: "Parenthood",
       highlight: "Starts Here",
       description: "Experience world-class fertility treatments at Metro IVF Hospital Kanpur. Led by Dr. Neena Gupta with over 30 years of expertise.",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      image: "/images/8ce4631d-0810-4b93-98fe-c7b1b5060b90.jpg",
       alt: "Modern IVF Laboratory"
     },
     {
@@ -25,7 +25,7 @@ export default function HeroSection() {
       subtitle: "Technology",
       highlight: "International Standards",
       description: "State-of-the-art laboratory facilities with success rates comparable to leading international fertility centers.",
-      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      image: "/images/a.jpg",
       alt: "Medical Equipment"
     },
     {
@@ -34,7 +34,7 @@ export default function HeroSection() {
       subtitle: "Excellence",
       highlight: "Trusted Expertise", 
       description: "Dr. Neena Gupta's proven track record with over 5,000 successful procedures and countless happy families.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      image: "/images/e4f09ccb-b360-44a2-8eaa-36da3eb07c5e.jpg",
       alt: "Happy Family"
     }
   ]

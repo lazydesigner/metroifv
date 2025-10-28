@@ -27,25 +27,25 @@ export default function HomePage() {
 
   const serviceSlides = [
     {
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop'
+      image: '/images/blog23.jpg'
     },
     {
-      image: 'https://images.unsplash.com/photo-1584362917165-526a968579e8?w=400&h=300&fit=crop'
+      image: '/images/eggfreezing-698x480.jpg-1-1.jpg'
     },
     {
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop'
+      image: '/images/hysteroscopic-surgery.jpg'
     },
     {
-      image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=300&fit=crop'
+      image: '/images/laparoscopic-surgery-by-dr.-sunil-tibrewal.jpg'
     },
     {
-      image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=300&fit=crop'
+      image: '/images/tOMtM8XCky0MmyKDCjXHLA5NAQFRzHvkxmS5MAv0.jpg'
     },
     {
-      image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=300&fit=crop'
+      image: '/images/ultrasound-scan.jpg'
     },
     {
-      image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=300&fit=crop'
+      image: '/images/e4f09ccb-b360-44a2-8eaa-36da3eb07c5e.jpg'
     }
   ]
 
@@ -57,7 +57,8 @@ export default function HomePage() {
       readTime: '6 min read',
       author: 'Dr. Bhaskar Gupta',
       slug: 'ivf-success-rates-explained',
-      category: 'IVF Treatment'
+      category: 'IVF Treatment',
+      image:'/images/e4f09ccb-b360-44a2-8eaa-36da3eb07c5e.jpg'
     },
     {
       title: 'PCOS and Fertility: Managing Your Reproductive Health',
@@ -66,7 +67,8 @@ export default function HomePage() {
       readTime: '6 min read',
       author: 'Dr. Neena Gupta',
       slug: 'pcos-fertility-management',
-      category: 'Women\'s Health'
+      category: 'Women\'s Health',
+      image:'/images/pcos.jpg'
     },
     {
       title: 'Male Infertility: Causes and Modern Treatments',
@@ -75,7 +77,8 @@ export default function HomePage() {
       readTime: '7 min read',
       author: 'Dr. Bhaskar Gupta',
       slug: 'male-infertility-causes-treatments',
-      category: 'Male Fertility'
+      category: 'Male Fertility',
+      image:'/images/male-infertility-1.jpg'
     }
   ]
 
@@ -318,7 +321,7 @@ export default function HomePage() {
                   {/* Image Half Out */}
                   <div className="absolute -top-14 left-1/2 transform -translate-x-1/2">
                     <img
-                      src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                      src="/images/dr-neena-gupta.jpg"
                       alt="Dr. Neena Gupta"
                       className="w-28 h-28 rounded-full object-cover border-4 border-white shadow-lg"
                     />
@@ -339,7 +342,7 @@ export default function HomePage() {
                   {/* Image Half Out */}
                   <div className="absolute -top-14 left-1/2 transform -translate-x-1/2">
                     <img
-                      src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                      src="/images/dr-bhaskar-gupta.jpg"
                       alt="Dr. Bhaskar Gupta"
                       className="w-28 h-28 rounded-full object-cover border-4 border-white shadow-lg"
                     />
@@ -405,7 +408,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+              src="/images/pregnancy-announcement_53876-677881.jpg"
               alt="Our Medical Team"
               fill
               className="object-cover object-center"
@@ -489,13 +492,19 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => (
               <article key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="h-48 bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-primary-200 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                      <span className="text-primary-600 font-bold">{index + 1}</span>
-                    </div>
+                <div className="relative h-48 bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center">
+                  {/* <div className="text-center">
+                    <div className="w-16 h-16 bg-primary-200 rounded-lg mx-auto mb-2 flex items-center justify-center"> */}
+                      {/* <span className="text-primary-600 font-bold">{index + 1}</span> */}
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="object-cover rounded-lg"
+                      />
+                    {/* </div>
                     <p className="text-gray-600 text-sm">Blog Post Image</p>
-                  </div>
+                  </div> */}
                 </div>
                 
                 <div className="p-6"> 
